@@ -61,7 +61,7 @@ pub enum ExecuteMsg<T, E> {
         /// Metadata JSON Schema
         token_uri: Option<String>,
         /// Any custom extension used by this contract
-        extension: T,
+        extension: Option<T>,
     },
 
     /// Burn an NFT the sender has access to
